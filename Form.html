@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style_Form.css">
+    <title>Formulário</title>
+    <script src="js/app.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js" integrity="sha512-aVKKRRi/Q/YV+4mjoKBsE4x3H+BkegoM/em46NNlCqNTmUYADjBbeNefNxYV7giUp0VxICtqdrbqU7iVaeZNXA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+</head>
+
+<body>
+    <div class="container">
+        <div class="form-image">
+            <img src="img/Formpage.jpg" alt="formfoto">
+        </div>
+        <div class="form">
+            <form id="formla" action="#">
+                <div class="form-header">
+                    <div class="title">
+                        <h1>Agendamento online</h1>
+                    </div>
+                    <div class="login-button">
+                        <button><a href="index.html">Voltar</a></button>
+                    </div>
+                </div>
+
+                <div class="input-group">
+                    <div class="input-box">
+                        <label for="name"> Nome </label>
+                        <input id="name" type="text" name="firstname" placeholder="Digite seu  nome" required>
+                    </div>
+
+                    <div class="input-box">
+                        <label for="date">Data e Horario Atendimento</label>
+                        <input id="date" type="datetime-local" name="data" placeholder="Digite seu sobrenome" required>
+                    </div>
+                    <div class="input-box">
+                        <label for="email">E-mail</label>
+                        <input id="email" type="email" name="email" placeholder="Digite seu e-mail" required>
+                    </div>
+
+                    <div class="input-box">
+                        <label for="number">Celular</label>
+                        <input id="number" type="tel" name="number" placeholder="(xx) xxxx-xxxx" required>
+                    </div>
+                   
+                </div>
+                <div class="gender-inputs">
+                    <div class="gender-title">
+                        <h6>Serviços</h6>
+                    </div>
+
+                    <div class="gender-group">
+                        <div class="gender-input">
+                            <input id="barba" type="radio" name="gender">
+                            <label for="barba">Barba</label>
+                        </div>
+
+                        <div class="gender-input">
+                            <input id="cabelo" type="radio" name="gender">
+                            <label for="cabelo">Cabelo</label>
+                        </div>
+
+                        <div class="gender-input">
+                            <input id="bigode" type="radio" name="gender">
+                            <label for="bigode">Bigode</label>
+                        </div>
+
+                        <div class="gender-input">
+                            <input id="sobrancelha" type="radio" name="gender">
+                            <label for="sobrancelha">Customizado</label>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="continue-button">
+                    <button onclick="validaTudo()"><a href="#">Enviar</a> </button>
+                </div>
+            </form>
+        </div>
+    </div>
+</body>
+</html>

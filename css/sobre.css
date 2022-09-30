@@ -1,0 +1,132 @@
+/* importando a letra usada no projeto */
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Serif:wght@300&display=swap');
+
+/* estilizando e caracterizando as opções do menu */
+.menu{
+    margin: 10px;
+    padding: 30px;
+    margin-left: 39px;
+    margin-right: 39px;
+    font-family:'IBM Plex Serif', serif;
+    
+}
+.menu a {
+    padding: 10px;
+    text-decoration: none;
+    font-size: 20px;
+    color: white;
+    margin: 3px;
+}
+
+/* estilizando e caracterizando a barra do menu */
+.barra {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    line-height: 35px;
+    font-size: 20px;
+    margin: 0 20px;
+    justify-content: space-between;
+    background: linear-gradient(rgb(0, 0, 0), transparent);   
+    font-size: min(18px, 5vw);
+
+}
+
+.barra img {
+    height: 60px;
+    width: 60px;
+    
+}
+.agendamento a{
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    font-family:'IBM Plex Serif', serif;
+}
+.agendamento {
+    background-color: #ffb800 ;
+    border-radius: 15px;
+    padding: 7px;
+}
+/* estilizando a page por completa*/
+body {
+    background-color: black;
+    color: white;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    height: 100%;
+    text-align: center;
+    font-family: 'IBM Plex Serif', serif;
+}
+/* estilizando e caracterizando o titulo */
+h1 {
+    font-size: 30px;
+    background-color: #ffb800;
+    color: black;
+    margin-left: 2%;
+    margin-right: 2%;
+}
+
+/* estilizando e caracterizando o texto */
+p {
+    font-size: 21px;
+    margin-left: 5%;
+    margin-right: 5%;
+    text-align: justify;
+}
+
+/* caracterizando a ilustação e o slide */
+.ilustration {
+    height: 200px;
+}
+
+.slide {
+    width: 40%;
+}
+
+/* trabalhando a responsividado do site*/
+/* responsividade para medio e pequenas telas */
+@media (max-width: 600px){
+    .slide img{
+        height: 300px;
+    }
+    .agendamento {
+        display: none;
+    }
+    .barra{
+        flex-direction: column;
+    }
+    .agendamentonone{
+        background-color: #ffb800 ;
+        border-radius: 15px;
+        
+    }
+    .menu{
+        margin: 0px;
+        padding: 10px;
+    }
+
+}
+
+/* responsividade para grandes telas */ 
+@media (min-width: 600px){
+    .agendamentonone {
+        display: none;
+    }
+    header{
+        position: sticky;
+        top:0;
+    }
+    .about {
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+    }
+
+    .mvv {
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+    }
+}

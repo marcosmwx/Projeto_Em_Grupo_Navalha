@@ -1,0 +1,253 @@
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Serif:wght@300&display=swap');
+/* caracterizar a page */
+body{
+    box-sizing: border-box;
+    height: 100%;
+    background: rgb(0, 0, 0);
+}
+/* estilizando as opções do menu */
+.menu{
+    margin: 10px;
+    padding: 30px;
+    margin-left: 39px;
+    margin-right: 39px;
+    font-family:'IBM Plex Serif', serif;
+    
+}
+.menu a {
+    padding: 10px;
+    text-decoration: none;
+    font-size: 20px;
+    color: white;
+    margin: 3px;
+}
+/* estilizar a barra com as opções do menu */
+.barra {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    line-height: 35px;
+    font-size: 20px;
+    margin: 0 20px;
+    justify-content: space-between;
+    background: linear-gradient(rgb(0, 0, 0), transparent);
+}
+.barra a{
+    font-size: min(18px, 5vw);
+}
+.barra img {
+    height: 60px;
+    width: 60px;
+    
+}
+/* caracterizar o botão do agendamento */
+.agendamento a{
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    font-family:'IBM Plex Serif', serif;
+}
+.agendamento {
+    background-color: #ffb800 ;
+    border-radius: 15px;
+    padding: 7px;
+}
+/* codigo para configurar esteticamente o slide */
+.slide img{
+    width: 80%;
+    height: 500px;
+    border-radius: 25px;
+}
+.slide{
+    display: flex;
+    justify-content: center;
+    margin-top:17px;
+    margin-bottom: 17px;
+}
+/* o footer foi usado para fazer o rodapé da page inicial */
+footer{
+    bottom: 0;
+    background-color: #ffb800;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    border-radius: 25px;
+}
+
+/* estilizar a os dados da lista no rodapé */
+footer ul{
+    list-style: none;
+    font-family:'IBM Plex Serif', serif;
+    margin: 10px;
+}
+footer ul li a {
+    color:rgb(0, 0, 0);
+    text-decoration: none;
+}
+footer ul li{
+    margin-top: 10px;
+}
+
+/* estilizar a imagem no rodapé */
+footer img{
+    max-width: 290px;
+    margin: 10px;
+}
+/* estilizando os itens da lista do footer */
+.gerais{
+    font-size: 15px;
+}
+
+#gerais:hover{
+    text-decoration: underline;
+}
+/* estilizando a lista do footer */
+#infogerais{
+    font-size: min(8px, 5vw);
+}
+/* configuração do card */
+/* alinhamento de posição, altura, definição de cor. */
+body {
+    justify-content: center;
+    align-items: center;
+    color: #ffd100; 
+    font-size: 16px;
+}
+/* alinhamento e espaço entre os cards. */
+
+main.cards {
+    display: flex;
+    padding: 32px;
+    justify-content: center;
+    align-items: center;
+    
+}
+/* caracteristicas do fundo do card. */
+main.cards section.card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    background: #202020;
+    padding: 1rem 1.5rem;
+    border-radius: 8px;
+    max-height: 468px;
+    margin-left: 32px;
+    
+}
+/* tirando a margem da esquerda */
+main.cards section.card:first-child {
+    margin-left: 0;
+}
+/* determinando o tamanho da imagem icone */
+main.cards section.card .icon {
+    width: 64px;
+    height: 64px;
+}
+/* esta dizendo o espaço que vai ocupar na no icon. */
+main.cards section.card img { 
+    width: 100%;
+}
+/* fonte */
+main.cards section.card h3 {
+    font-size: 100%;
+    margin: 16px 0;
+}
+
+main.cards section.card span {
+    font-weight: 300;
+    max-width: 240px;
+    font-size: 80%;
+    margin-bottom: 16px;
+}
+/* cor e alinhamento do botão */
+main.cards section.card button {
+    padding: 0.5rem 1rem;
+    text-transform: uppercase;
+    border-radius: 32px;
+    border: 0;
+    cursor: pointer;
+    font-size: 80%;
+    font-weight: 500;
+    color: rgb(0, 0, 0);
+    margin-bottom: 16px 0;
+}
+/* cor do botão */
+main.cards section.card.contact button {
+    background: linear-gradient(to right, #ffd100, #fff );
+}
+main.cards section.card.shop button {
+    background: linear-gradient(to right, #ffd100, #fff);
+}
+main.cards section.card.about button {
+    background: linear-gradient(to right, #ffd100, #fff);
+}
+
+/* luz de fundo do card */
+main.cards section.card.contact {
+    box-shadow: 20px 20px 50px -30px #ffd100;
+}
+main.cards section.card.shop {
+    box-shadow: 20px 20px 50px -30px #ffd100;
+}
+main.cards section.card.about {
+    box-shadow: 20px 20px 50px -30px #ffd100;
+}
+/* curvatura do icon  */
+.cards img {
+    border-radius: 5px;
+}
+
+/* estelizar e caracterizar a page na responsividade*/
+/* responsividade para medio e pequenas telas */
+@media (max-width: 600px){
+    .barra{
+        flex-direction: column;
+    }
+    .menu{
+        margin: 0px;
+        padding: 10px;
+    }
+    .agendamento {
+        display: none;
+    }
+    .agendamentonone{
+        background-color: #ffb800 ;
+        border-radius: 15px; 
+    }
+    .slide img{
+        height: 300px;
+    }
+}
+
+/* responsividade para grandes telas */
+@media (min-width: 600px){
+    .agendamentonone {
+        display: none;
+    }
+    header{
+        position: sticky;
+        top:0;
+    }
+}
+
+/* responsividade dos card */
+@media screen and (max-width: 720px) {
+    main.cards {
+        flex-direction: column;
+    }
+
+    main.cards section.card {
+        margin-left: 0;
+        margin-bottom: 32px;
+    }
+
+    main.cards section.card:last-child {
+        margin-bottom: 0;
+    }
+
+    main.cards section.card button {
+        font-size: 70%;
+    }
+
+}

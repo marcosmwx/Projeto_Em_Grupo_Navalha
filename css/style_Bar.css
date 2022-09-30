@@ -1,0 +1,277 @@
+
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Serif:wght@300&display=swap');
+
+*{
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    box-sizing: border-box;
+    background-image: url(../img/fundo3.jpg);
+    background-size: cover; /* redimensionamento da img de fundo */
+    background-position: center;
+}
+/* CSS da barra de navegação*/
+.menu{
+    margin: 10px;
+    padding: 30px;
+    margin-left: 39px;
+    margin-right: 39px;
+    font-family:'IBM Plex Serif', serif;
+    
+}
+.menu a {
+    padding: 10px;
+    text-decoration: none;
+    font-size: 20px;
+    color: white;
+    margin: 3px;
+}
+.barra {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    line-height: 35px;
+    font-size: 20px;
+    margin: 0 20px;
+    justify-content: space-between;
+    background: linear-gradient( transparent);
+}
+.barra img {
+    height: 60px;
+    width: 60px;
+    
+}
+.agendamento a{
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    font-family:'IBM Plex Serif', serif;
+}
+.agendamento {
+    background-color: #ffb800 ;
+    border-radius: 15px;
+    padding: 7px;
+}
+
+/* corpo da página */
+.corpo h1{
+    display: flex; /* tive que usar display flex para conseguir alinhar o icon de cerveja separadamente no título*/
+    justify-content: center;
+    font-size: 50px;
+    color: black;
+    background-color: #ffb700f4;
+    box-shadow: -10px 5px 10px black;
+}
+
+
+.corpo img{  /* icon cerveja ao lado do título ""Nosso bar */
+    width: 45px;
+    padding-bottom: 8px;
+    
+}
+
+.corpo h3{ /* texto de apresentação do bar */
+    font-size: 30px;
+    color: rgb(255, 255, 255);
+    margin-top: 5%;
+    margin-left: 25px;
+    margin-right: 25px;
+    flex-wrap: wrap;
+    font-family: 'IBM Plex Serif', serif;
+    text-shadow: 0px 2px rgb(0, 0, 0);
+    
+}
+
+.corpo h2{ /* título cardápio */
+    text-align: center;
+    font-size: 40px;
+    background-color: #ffb700f4;
+    box-shadow: -10px 5px 10px black;
+   
+}
+#bartexto{
+    background-color: rgba(0, 0, 0, 0.398);
+}
+    
+
+.item{ /* lista 1*/
+    color: white;
+    list-style: none;
+    font-size: 25px;  
+}
+
+.item2{ /*lista 2*/
+    color: white;
+    list-style: none;
+    font-size: 25px;
+    
+}
+.img1{ /*box-shadow nos quatro 'img' para dar efeito de sombra */
+    height: 77px;
+    width: 77px;
+    border-radius: 20px;
+    box-shadow: -10px 5px 10px black;
+    
+}
+.img2{ 
+    height: 75px;
+    width: 75px;
+    margin-left: 5px;
+    border-radius: 20px;
+    box-shadow: -10px 5px 10px black;
+  
+}
+.img3{
+    height: 74px;
+    width: 74px;
+    margin-left: 5px;
+    border-radius: 20px;
+    box-shadow: -10px 5px 10px black;
+}
+
+.img4{
+    height: 73px;
+    width: 73px;
+    margin-left: 5px; 
+    border-radius: 20px;
+    box-shadow: -10px 5px 10px black;
+}
+.corpo h2{
+    margin-top: 4%;
+}
+.corpo {
+    text-align: center;
+}
+@media (max-width: 600px){ /* media pequeno*/
+    .agendamento {
+        display: none;
+    }
+    .barra{
+        flex-direction: column;
+    }
+    .agendamentonone{
+        background-color: #ffb800 ;
+        border-radius: 15px;  
+    }
+    .menu{
+        margin: 0px;
+        padding: 10px;
+    }
+
+    .bebidas{
+    
+        text-align: center;
+        font-size: 40px;
+        color: #ffb700f4;
+    }
+    .bebidas ul li{
+        font-size: min(18px, 5vw);
+    }
+    .bebidas ul{
+        text-align: center;
+    }
+    .icons p {
+        font-size: 40px;
+        color: #ffb700f4;
+        text-align: center;
+        
+    }
+    .icons img{
+        max-width:70px;
+        height: 70px;
+        background-color: #ffb800;
+        
+    }
+    .icons {
+        text-align: center;
+    }
+    .porcoes {
+        font-size: 40px;
+        color: #ffb700f4;
+        text-align: center;
+    }
+    .porcoes ul li{
+        font-size: min(18px, 5vw);
+    }
+    .barra a{
+        font-size: min(18px, 5vw);
+    
+    }
+    .corpo h3{
+        font-size: min(15px, 5vw);
+    
+    }
+    .item{
+        font-size: min(40px, 5vw);
+    }
+    .nossobar h1 h2 h3{
+        font-size: 14px;
+    }
+    .corpo h2{
+        font-size: 30px;
+    }
+    .corpo h1{
+        font-size: 30px;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+@media (min-width: 600px){ /* media grande*/
+.agendamentonone {
+    display: none;
+}
+header{
+    position: sticky;
+    top:0;
+}
+
+.listas{    /* display flex para as listas do cardápio ficarem lado a lado */
+    display: flex;
+    font-family: 'IBM Plex Serif', serif;
+    justify-content: center;
+}
+.bebidas {
+    font-size: 40px;
+    color: #ffb700f4;
+    margin-right: 250px;            
+    justify-content: space-around;
+    text-decoration: underline rgba(244, 244, 244, 0.26);
+    text-align: justify;
+}
+.bebidas ul li{
+    text-align: left;
+    
+}
+.porcoes {
+    font-size: 40px;
+    color: #ffb700f4;
+    margin-right: 250px;            
+    justify-content: space-around;
+    text-decoration: underline rgba(244, 244, 244, 0.26);
+    text-align: justify;
+}
+.icons p {
+    font-size: 40px;
+    color: #ffb700f4;
+    margin-right: 250px;            
+    justify-content: space-around;
+    text-decoration: underline rgba(244, 244, 244, 0.26);
+    text-align: justify;
+}
+#bartexto h3{
+    font-size: 21px;
+}
+}

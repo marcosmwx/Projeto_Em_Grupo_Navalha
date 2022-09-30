@@ -1,0 +1,185 @@
+/* importando a letra usada no projeto */
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Serif:wght@300&display=swap');
+/* estilizando a page por completa*/
+body{
+    box-sizing: border-box;
+    height: 100%;
+    background: rgb(0, 0, 0);
+    margin-bottom: 30px;
+}
+/* estilizando e caracterizando as opções do menu */
+.menu{
+    margin: 10px;
+    padding: 30px;
+    margin-left: 39px;
+    margin-right: 39px;
+    font-family:'IBM Plex Serif', serif;
+}
+.menu a {
+    padding: 10px;
+    text-decoration: none;
+    font-size: 20px;
+    color: white;
+    margin: 3px;
+}
+
+/* estilizando e caracterizando a barra do menu */
+.barra {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    line-height: 35px;
+    font-size: 20px;
+    margin: 0 20px;
+    justify-content: space-between;
+    background: linear-gradient(#000, transparent);
+}
+.barra a{
+    font-size: min(18px, 5vw);
+
+}
+
+/* caracterizando a imagem da logo */
+.barra img {
+    height: 60px;
+    width: 60px;
+    
+}
+/* estilizando e caracterizando a opção do agendamento */
+.agendamento a{
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    font-family:'IBM Plex Serif', serif;
+}
+.agendamento {
+    background-color: #ffb800 ;
+    border-radius: 15px;
+    padding: 7px;
+}
+/* caracterizar a imagem ao fundo*/
+.bg-mesa-de-madeira {
+    background-image: url(../img/foto2.png);
+    
+}
+#imagem{
+    width: 300px;
+    margin-left: 50px;
+}
+/* estilizando  'sobre a equipe' */
+#NE{
+    color: #ffb800;
+    font-family:'IBM Plex Serif', serif;
+    font-size: 32px;
+}
+/* caracterização do texto da div do 'sobre a equipe'*/
+#texto{
+    margin-left: 8%;
+}
+#letras{
+    color: white;
+    text-align: justify;
+    font-family:'IBM Plex Serif', serif;
+    margin-right: 10%;
+}
+/* caracterização da equipe dos sonhos */
+.colab{
+    flex-direction: row;
+    margin: 20px;
+    
+}
+/* caracterização do titulo da nav correspondente 'Equipe dos Sonhos'*/
+.NE{
+    color:#000;
+    font-family: 'IBM Plex Serif', serif;
+    font-size: 32px;
+    justify-content: center;
+    background-color: #ffb800;
+}
+#colaboradores{
+    color: white;
+}
+/* caracterização geral da nav */
+.integrante {
+    display: flex;
+}
+/* caracterização das imagens da nav*/
+.integrante img {
+    width: 200px;
+    border-radius: 40px;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+/* caracterização dos paragrafos e dos subtitulos da nav*/
+.integrante p {
+    color: #FFF;    
+    text-align: justify;
+    font-family: 'IBM Plex Serif', serif;
+}
+
+.integrante h2 {
+    font-size: 32px;
+    color: rgb(236, 201, 47);
+    font-family: 'IBM Plex Serif', serif;
+    background-color: #ffb800;
+    height: 4px;
+}
+
+/* trabalhando a responsividado do site*/
+/* responsividade para medio e pequenas telas */
+@media (max-width: 600px){
+    .menu{
+        margin: 0px;
+        padding: 10px;
+    }
+    .barra{
+        flex-direction: column;
+    }
+    .agendamento {
+        display: none;
+    }
+    .agendamentonone{
+        background-color: #ffb800 ;
+        border-radius: 15px;
+    }
+    .integrante{
+        height: 100px; 
+        width:100%;
+        flex-wrap: wrap;
+        flex-direction: row;
+        padding-bottom: 125%;
+    }
+    .img-right{
+        display: none;
+    }
+
+}
+/* responsividade para grandes telas */
+@media (min-width: 600px){
+    
+    header{
+        position: sticky;
+        top:0;
+    }
+    .agendamentonone {
+        display: none;
+    }
+    .bg-mesa-de-madeira {
+        padding: 30px 20px;
+        margin: 10px;
+    }
+    #texto { 
+        margin: 20px 50px;
+        display: flex;
+        flex-direction: row-reverse;
+    }
+    /* quando a tela estiver para PC ela sumir*/
+    .jadinha{
+        display: none;
+    }
+    .luizinho{
+        display: none;
+    }
+
+}
